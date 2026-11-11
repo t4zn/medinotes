@@ -1,0 +1,20 @@
+# Medinotes Source-Available License
+
+Copyright (c) 2026 Medinotes (https://medinotes.in). All Rights Reserved.
+
+### 1. Purpose
+This repository provides the open-source frontend starter template for the Medinotes academic portal, allowing developers and students to learn from, run locally, and customize the UI structure for non-competing personal or educational projects.
+
+### 2. Permitted Uses
+You are free to:
+- Clone, run, inspect, and modify this frontend starter for personal, educational, and non-commercial study projects.
+- Contribute bug fixes, UI improvements, and documentation updates via Pull Requests and Issues.
+
+### 3. Prohibited Uses
+Without prior express written permission from the copyright holder:
+- You may NOT launch, host, or distribute a competing study material, notes-sharing, or university resource platform using Medinotes branding, mascots, or direct clones of the site.
+- You may NOT commercially exploit, sell, or re-license this template, the "Medinotes" name, logos, or mascot assets.
+- Automated scraping or bulk extraction of assets from Medinotes services is strictly forbidden.
+
+### 4. Disclaimer
+THIS SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
