@@ -1,0 +1,73 @@
+.resourceGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  max-width: 60rem;
+  container-type: inline-size;
+}
+
+.resourceCard {
+  flex: 1 1 100%;
+  max-width: 22rem;
+}
+
+@container (min-width: 390px) {
+  .resourceCard {
+    flex-basis: calc((100% - 0.75rem) / 2);
+  }
+}
+
+@container (min-width: 730px) {
+  .resourceCard {
+    flex-basis: calc((100% - 2.25rem) / 4);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .notes {
+    animation: slide-note 4s ease-in-out infinite;
+  }
+
+  .noteLines,
+  .check,
+  .route {
+    animation: draw 4s ease-in-out infinite;
+  }
+
+  .noteLines { animation-delay: 0.3s; }
+  .check:nth-of-type(3) { animation-delay: 0.25s; }
+  .check:nth-of-type(4) { animation-delay: 0.5s; }
+
+  .wave {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: voice 1.4s ease-in-out infinite;
+  }
+
+  .wave:nth-child(even) { animation-delay: 0.16s; }
+
+  .pin {
+    animation: place-pin 4s 0.55s ease-in-out infinite;
+  }
+}
+
+@keyframes slide-note {
+  0%, 100% { transform: translate(-14px, 12px); }
+  25%, 84% { transform: translate(0, 0); }
+}
+
+@keyframes draw {
+  0%, 100% { stroke-dasharray: 1; stroke-dashoffset: 1; }
+  30%, 84% { stroke-dasharray: 1; stroke-dashoffset: 0; }
+}
+
+@keyframes voice {
+  25% { transform: scaleY(0.45); }
+  70% { transform: scaleY(1.55); }
+}
+
+@keyframes place-pin {
+  0%, 12%, 100% { opacity: 0; transform: translateY(-14px); }
+  30% { opacity: 1; transform: translateY(2px); }
+  38%, 84% { opacity: 1; transform: translateY(0); }
+}
